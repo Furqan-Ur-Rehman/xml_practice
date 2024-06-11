@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Non Validating Parse-->
+
+<employee>
+    <name>
+        <firstname>ABC</firstname>
+        <lastname>Xyz</lastname>
+    </name>
+
+    <phone>0345789653365</phone>
+    <salary>45000</salary>
+</employee>

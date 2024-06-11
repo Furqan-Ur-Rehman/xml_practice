@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 1======================================================================== -->
+<!-- Internal DTD(Document Type Definition) -->
+
+<!DOCTYPE EMPLOYEE[
+    <!ELEMENT EMPLOYEE (name*, (phone|mobile), salary+, city? , designation, Experience)>
+    <!ELEMENT name (firstname, lastname)>
+    <!ELEMENT firstname (#PCDATA)>
+    <!ELEMENT lastname (#PCDATA)>
+    <!ELEMENT phone (#PCDATA)>
+    <!ELEMENT mobile (#PCDATA)>
+    <!ELEMENT designation (#PCDATA)>
+    <!ELEMENT Experience (#PCDATA)>
+    <!ELEMENT salary (#PCDATA)>
+    <!ELEMENT city (#PCDATA)>
+    <!ATTLIST name id CDATA "1">  <!--(Set default id=1 if xml element doesn't have id) !-->
+    <!-- <!ATTLIST name id CDATA #REQUIRED> (Must set id in xml element) ! -->
+    <!-- <!ATTLIST name id CDATA #IMPLIED> (Set or not Set id in xml element) -->
+    <!-- <!ATTLIST name id CDATA #FIXED "1"> (Set fixed id in xml element i.e. 1)-->
+    <!ENTITY desig "Sr. Software Engineer">
+    <!ENTITY exp "5 or more year of Experience">
+]>
+<!-- * means zero or more times must present the element  (Use zero or more).
++ means one or more times must present the element (Use at least one or more).
+? means zero or only one time use the element (Use zero or only one) -->
+
+<!-- 2=========================================================================== -->
+<!-- or -->
+
+<!-- <!DOCTYPE EMPLOYEE[
+    <!ELEMENT EMPLOYEE ANY>
+    <!ELEMENT name (firstname, lastname)>
+    <!ELEMENT firstname (#PCDATA)>
+    <!ELEMENT lastname (#PCDATA)>
+    <!ELEMENT mobile (#PCDATA)>
+    <!ELEMENT salary (#PCDATA)>
+    <!ELEMENT city (#PCDATA)>
+
+]> -->
+
+<!-- 3========================================================================= -->
+
+<!-- Declaring Mixed Content -->
+
+<!-- <!DOCTYPE EMPLOYEE[
+    <!ELEMENT EMPLOYEE (#PCDATA|name|mobile|salary|city)*> (use zero or one or more)
+    <!ELEMENT name (firstname, lastname)>
+    <!ELEMENT firstname (#PCDATA)>
+    <!ELEMENT lastname (#PCDATA)>
+    <!ELEMENT mobile (#PCDATA)>
+    <!ELEMENT salary (#PCDATA)>
+    <!ELEMENT city (#PCDATA)>
+
+]> -->
+<!-- =========================================================================== -->
+
+<EMPLOYEE>
+    <name>
+        <firstname>Furqan</firstname>
+        <lastname>Rehman</lastname>
+    </name>
+    <name>
+        <firstname>Wahaj</firstname>
+        <lastname>Shameel</lastname>
+    </name>
+        <mobile>0346-7894562</mobile>
+        <salary>2000000</salary>
+        <salary>2000000</salary>
+        <city>Karachi</city>
+        <designation>C# Developer or .Net Developer (&desig;)</designation>
+        <Experience> &exp; </Experience>
+</EMPLOYEE>

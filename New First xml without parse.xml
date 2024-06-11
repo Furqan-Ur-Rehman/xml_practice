@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<class 
+xmlns:a="http://www.abc.com/class_a"
+xmlns:b="http://www.abc.com/class_b"
+>
+    <a:student>
+        <name>
+        <firstname>Muniba</firstname>
+        <lastname>Javed Khan</lastname>
+        </name>
+        <phone>0345-7865321</phone>
+        <salary>200000</salary>
+    </a:student>
+
+    <b:student>
+        <name>
+        <firstname>Furqan</firstname>
+        <lastname>Rehman</lastname>
+        </name>
+        <phone>0345-7865321</phone>
+        <salary>200000</salary>
+    </b:student>
+
+        <!-- Or declare Namespace in indivisual  -->
+
+    <student xmlns:c="http://www.abc.com/class_c">
+        <name>
+        <c:firstname>Ali</c:firstname>
+        <c:lastname>Hussain</c:lastname>
+        </name>
+        <c:phone>0345-7865321</c:phone>
+        <c:salary>200000</c:salary>
+    </student>
+
+</class>

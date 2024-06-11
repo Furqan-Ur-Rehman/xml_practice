@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE Student SYSTEM "External_DTD.dtd">
+
+<Student>
+    <name>Furqan</name>
+    <age>30</age>
+    <course>PHP, MVC, Javascript</course>
+</Student>

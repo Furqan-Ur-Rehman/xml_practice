@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Internal DTD (Document Type Definition)-->
+<!-- <!DOCTYPE EMPLOYEE[
+<!ELEMENT EMPLOYEE (name*, phone+, (salary|Salary),city?)>
+<!ELEMENT name (firstname, lastname)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ELEMENT Salary (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ENTITY city "Karachi">
+<!ATTLIST name id CDATA "1">
+]> -->
+
+<!DOCTYPE EMPLOYEE[
+<!ELEMENT EMPLOYEE ANY>
+<!ELEMENT name (firstname, lastname)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ELEMENT Salary (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ENTITY city "Karachi">
+<!ATTLIST name id CDATA "1">
+]>
+<EMPLOYEE>
+
+    <name>
+        <firstname>Furqan</firstname>
+        <lastname>Rehman</lastname>
+    </name>
+
+    <name>
+        <firstname>Adnan</firstname>
+        <lastname>Rehman</lastname>
+    </name>
+    
+
+    <!-- <phone>46789794646</phone>
+    <phone>46789794646</phone> -->
+    
+    <!-- <salary>500000</salary> -->
+    <!-- or -->
+    <Salary>500000</Salary>
+
+    <!-- <city> &city; </city> -->
+</EMPLOYEE>
+
+

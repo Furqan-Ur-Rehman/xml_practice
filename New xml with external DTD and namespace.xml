@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+
+<!-- <!DOCTYPE student SYSTEM "ExternalDTD.dtd">  -->
+
+<!DOCTYPE student [
+<!ELEMENT student (name*, age, salary)>
+<!ELEMENT name (a:firstname, a:lastname)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+]>
+<student xmlns:a="http://www.abc.com/class_a" xmlns:b="http://www.abc.com/class_b">
+    <name>
+        <a:firstname>Muniba</a:firstname>
+        <a:lastname>Javed Khan</a:lastname>
+    </name>
+
+    <name >
+        <b:firstname>Furqan</b:firstname>
+        <b:lastname>Rehman</b:lastname>
+    </name>
+
+    <age>28</age>
+    <salary>200000</salary>
+</student>

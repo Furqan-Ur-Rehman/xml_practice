@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="xsl with xml.xsl" ?>
+<Persons>
+        <person id="1">
+        <name>Adil</name>
+        <age>24</age>
+        <salary>178000</salary>
+        <qualification>BCS</qualification>
+        <DOB>10 December 1990</DOB>
+        </person>
+
+        <person id="2">
+        <name>Ahmed</name>
+        <age>25</age>
+        <salary>178000</salary>
+        <qualification>BCS</qualification>
+        <DOB>10 December 1990</DOB>
+        </person>
+
+        <person id="3">
+        <name>Muniba</name>
+        <age>28</age>
+        <salary>200000</salary>
+        <qualification>BCS</qualification>
+        <DOB>10 December 1992</DOB>
+        </person>
+
+        <person id="4">
+        <name>Furqan</name>
+        <age>30</age>
+        <salary>200000</salary>
+        <qualification>BCS</qualification>
+        <DOB>10 December 1990</DOB>
+        </person>
+
+</Persons>
